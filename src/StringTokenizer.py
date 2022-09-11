@@ -58,11 +58,7 @@ class GenerateBaseRegexPatterns:
         """
         for key,pattern in self.base.items():
             self.patterns[key.title()] = f'[{pattern}]+'
-
-        # self.Lowers = f'[{self.lower}]+'    # a, aa
-        # self.Uppers = f'[{self.upper}]+'    # A, AA
-        # self.Digits = f'[{self.digit}]+'    # 0, 00     
-
+            
     def generate_patterns_sequence_two(self):
         """
         """
