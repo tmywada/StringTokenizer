@@ -76,15 +76,6 @@ class GenerateBaseRegexPatterns:
 
             self.patterns[key] = f'{p0}{p1}'
 
-        # self.LowersUppers = f'[{self.lower}]+[{self.upper}]+'  # aA, aaAA
-        # self.LowersDigits = f'[{self.lower}]+[{self.digit}]+'  # a0, aa00
-
-        # self.UppersLowers = f'[{self.upper}]+[{self.lower}]+'  # Aa, AAaa
-        # self.UppersDigits = f'[{self.upper}]+[{self.digit}]+'  # A0, AA00
-
-        # self.DigitsLowers = f'[{self.digit}]+[{self.lower}]+'  # 0a, 00aa
-        # self.DigitsUppers = f'[{self.digit}]+[{self.upper}]+'  # 0A, 00AA  
-
     def generate_patterns_sequence_three(self):
         """
         """
@@ -98,24 +89,6 @@ class GenerateBaseRegexPatterns:
             p2 = f'[{self.base[k2]}]+'
 
             self.patterns[key] = f'{p0}{p1}{p2}'
-
-        # self.LowersUppersDigits = f'{copy.deepcopy(self.LowersUppers)}[{self.digit}]+'   # aA0, aaAA00
-        # self.LowersUppersLowers = f'{copy.deepcopy(self.LowersUppers)}[{self.lower}]+'   # aAa, aaAAaa
-
-        # self.LowersDigitsUppers = f'{copy.deepcopy(self.LowersDigits)}[{self.upper}]+'   # a0A, aa00AA  
-        # self.LowersDigitsLowers = f'{copy.deepcopy(self.LowersDigits)}[{self.lower}]+'   # a0a, aa00aa
-
-        # self.UppersLowersDigits = f'{copy.deepcopy(self.UppersLowers)}[{self.digit}]+'   # Aa0, AAaa00
-        # self.UppersLowersUppers = f'{copy.deepcopy(self.UppersLowers)}[{self.upper}]+'   # AaA, AAaaAA        
-
-        # self.UppersDigitsLowers = f'{copy.deepcopy(self.UppersDigits)}[{self.lower}]+'   # A0a, AA00aa
-        # self.UppersDigitsUppers = f'{copy.deepcopy(self.UppersDigits)}[{self.upper}]+'   # A0A, AA00AA        
-
-        # self.DigitsLowersUppers = f'{copy.deepcopy(self.DigitsLowers)}[{self.upper}]+'   # 0aA, 00aaAA
-        # self.DigitsLowersDigits = f'{copy.deepcopy(self.DigitsLowers)}[{self.digit}]+'   # 0a0, 00aa00
-
-        # self.DigitsUppersLowers = f'{copy.deepcopy(self.DigitsUppers)}[{self.lower}]+'   # 0Aa, 00AAaa
-        # self.DigitsUppersDigits = f'{copy.deepcopy(self.DigitsUppers)}[{self.digit}]+'   # 0A0, 00AA00
 
     def generate_patterns_prefixed(self):
         """
